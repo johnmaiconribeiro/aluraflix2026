@@ -1,1 +1,84 @@
+/* ==========================================================================
+   VARIÁVEIS DE COR E RESET (Fácil personalização)
+   ========================================================================== */
+:root {
+    --bg-principal: #141414;
+    --bg-secundario: #000000;
+    --bg-card: #1c1c1c;
+    --cor-destaque: #e50914; /* Mude aqui para mudar o tema */
+    --cor-texto: #ffffff;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--cor-texto);
+}
+
+/* ==========================================================================
+   COMPONENTES (Header, Banner, Grid e Cards)
+   ========================================================================== */
+
+/* Header Flexível */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4%;
+    background-color: var(--bg-secundario);
+}
+
+.logo { color: var(--cor-destaque); font-size: 1.8rem; }
+.logo span { color: var(--cor-texto); }
+.nav a { color: var(--cor-texto); text-decoration: none; }
+.nav a:hover { color: var(--cor-destaque); }
+
+/* Banner Enxuto */
+.banner {
+    height: 35vh;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--bg-principal)), url('https://picsum.photos/1200/400') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.banner-content h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+/* Grid de Vídeos Inteligente (Auto-responsivo) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 2rem 4%;
+}
+
+/* Card com efeito de Zoom Fluido */
+.card {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover { 
+    transform: scale(1.03); 
+}
+
+.card a { text-decoration: none; color: inherit; }
+.card-img { width: 100%; display: block; }
+.card-title { padding: 1rem; font-size: 1.1rem; }
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--bg-secundario);
+    color: #555;
+    font-size: 0.9rem;
+}
