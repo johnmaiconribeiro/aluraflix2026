@@ -2,15 +2,15 @@
    CONFIGURAÇÕES GERAIS E VARIÁVEIS
    ========================================================================== */
 :root {
-    --cor-principal: rgb(42, 122, 228);   /* Azul Alura */
-    --cor-hover: #2ecc71;                /* Verde mais moderno para o hover */
-    --bg-chamada: rgb(184, 156, 213);    /* Roxo de destaque */
+    --cor-principal: rgb(175, 26, 105);   /* Azul Alura */
+    --cor-hover: #b38720;                /* Verde mais moderno para o hover */
+    --bg-chamada: rgb(88, 15, 165);    /* Roxo de destaque */
     --font-style: "Chakra Petch", sans-serif;
 }
 
 body {
-    color: white;
-    background: black;
+    color: rgb(245, 209, 250);
+    background: rgb(67, 2, 72);
     margin: 0;
     font-family: var(--font-style);
     padding-bottom: 100px; /* Padding é mais seguro que margin no body */
