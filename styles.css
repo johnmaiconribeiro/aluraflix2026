@@ -17,7 +17,7 @@ header {
 
 .chamada {
     /* Fundo da chamada em cinza bem escuro para destacar o conteúdo */
-    background: rgba(29, 29, 29, 0.808); 
+    background: rgba(64, 3, 3, 0.967); 
     padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
